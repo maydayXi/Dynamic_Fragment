@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_drawable"
+    android:orientation="vertical"
+    tools:context="wei.com.fragment2.MainActivity">
+
+    <!-- 直立畫面只有一個顯示詳細資料的 Fragment -->
+    <!-- 用 FrameLayout 裝載 Fragment -->
+    <!-- android:name 指定要載入的 Fragment 類別 -->
+    <fragment
+        android:id="@+id/master_fragment"
+        android:name="wei.com.fragment2.MasterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

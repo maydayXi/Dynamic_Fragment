@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 橫式畫面有兩個 fragment (選單與詳細資料) -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_drawable">
+
+    <!-- 顯示項目資料的 Fragment -->
+    <fragment
+        android:id="@+id/master_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="wei.com.fragment2.MasterFragment"/>
+
+    <!-- 顯示詳細資料的 Fragment -->
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:name="wei.com.fragment2.DetailFragment"/>
+</LinearLayout>
